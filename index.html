@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#05070d" />
+  <meta name="description" content="DevMind AI — your intelligent coding mentor powered by Gemma 4." />
+  <title>DevMind AI — Think. Build. Debug.</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+ <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+ <header class="site-header"><nav class="nav container" aria-label="Main navigation">
+  <a class="brand" href="#home" aria-label="DevMind AI home"><span class="brand-mark">✳</span><span>DevMind <b>AI</b></span></a>
+  <div class="nav-links"><a href="#features">Features</a><a href="#workflow">How it works</a><a href="#assistant">AI Assistant</a><a href="#about">About</a></div>
+  <a class="nav-cta" href="#assistant">Launch Assistant <span aria-hidden="true">↗</span></a>
+ </nav></header>
+ <main id="home">
+  <section class="hero container"><div class="eyebrow"><span class="sparkle">✧</span> YOUR AI-POWERED CODING COMPANION</div>
+   <h1>Code smarter.<br/><span class="gradient-text">Learn without limits.</span></h1>
+   <p class="hero-description">Meet your personal AI coding mentor. Understand complex concepts, untangle bugs, and turn your next big idea into something real.</p>
+   <div class="hero-actions"><a href="#assistant" class="btn btn-primary">Start Coding with AI <span>↗</span></a><a href="#features" class="btn btn-secondary">Explore Features <span>↓</span></a></div>
+   <div class="hero-trust"><span>✦ Powered by Gemma 4</span><span>♧ Built for developers</span><span>⌘ Learn by doing</span></div>
+   <div class="hero-glow"></div>
+  </section>
+  <section class="feature-section container" id="features"><div class="section-kicker">WHAT YOU CAN DO</div><h2>Everything you need to <span class="gradient-text">level up.</span></h2><p class="section-subtitle">One focused workspace for the questions, bugs and breakthroughs along the way.</p>
+   <div class="feature-grid">
+    <article class="feature-card"><span class="feature-icon cyan">&lt;/&gt;</span><h3>Ask Anything</h3><p>From your first Python loop to advanced development concepts, get clear explanations with practical examples.</p><span class="feature-foot">EXPLORE CONCEPTS ↗</span></article>
+    <article class="feature-card"><span class="feature-icon purple">⌁</span><h3>Debug Smarter</h3><p>Paste an error message or broken code and get help identifying likely causes and possible fixes.</p><span class="feature-foot">SOLVE PROBLEMS ↗</span></article>
+    <article class="feature-card"><span class="feature-icon blue">✧</span><h3>Build with Confidence</h3><p>Brainstorm projects, understand algorithms and learn the reasoning behind every solution.</p><span class="feature-foot">KEEP CREATING ↗</span></article>
+   </div>
+  </section>
+  <section class="workflow container" id="workflow"><div class="workflow-copy"><div class="section-kicker">SIMPLE BY DESIGN</div><h2>From question to <span class="gradient-text">clarity.</span></h2><p>No complex setup for users. Just tell DevMind what you're working on, and keep the conversation going.</p><div class="steps"><div><b>01</b><span><strong>Ask your question</strong><small>Share code, an error, or a concept.</small></span></div><div><b>02</b><span><strong>DevMind thinks</strong><small>Your request goes securely through our backend to the AI model.</small></span></div><div><b>03</b><span><strong>Understand and build</strong><small>Get a response and ask a follow-up.</small></span></div></div></div><div class="terminal-preview"><div class="terminal-top"><span class="dots"><i></i><i></i><i></i></span><span>devmind / example.py</span><span>✦</span></div><pre><span class="muted"># Your journey starts here</span>
+<span class="pink">def</span> <span class="cyan-text">build_something_amazing</span>():
+    idea = <span class="green">"Your next big project"</span>
+    curiosity = <span class="orange">True</span>
+
+    <span class="pink">while</span> curiosity:
+        learn()
+        experiment()
+        improve()
+
+    <span class="pink">return</span> <span class="green">"You got this!"</span>
+
+<span class="cyan-text">build_something_amazing</span>()</pre><div class="terminal-foot"><span class="pulse"></span> ready to learn and build</div></div></section>
+  <section class="assistant-section container" id="assistant"><div class="section-kicker">YOUR WORKSPACE</div><h2>Meet your new <span class="gradient-text">coding partner.</span></h2><p class="section-subtitle">Ask a real question below. This chat connects to your DevMind Python backend.</p>
+   <div class="chat-shell"><aside class="chat-side"><div class="side-brand"><span class="brand-mark">✳</span><strong>DevMind AI</strong></div><button id="new-chat" class="new-chat" type="button">＋ New conversation</button><div class="side-heading">QUICK START</div><button class="suggestion" data-prompt="Explain Python functions with a simple example." type="button">✧ Explain Python functions</button><button class="suggestion" data-prompt="Help me debug an IndexError in Python." type="button">⌁ Debug a Python error</button><button class="suggestion" data-prompt="Suggest an impressive beginner AI project I can build." type="button">◇ Suggest a project idea</button><div class="side-bottom"><span class="status-light"></span> Gemma 4 via secure backend</div></aside>
+   <div class="chat-main"><div class="chat-top"><div><strong>DevMind Assistant</strong><span><i class="status-light"></i> Here to help you build</span></div><span class="model-pill">✧ Gemma 4</span></div>
+    <div id="messages" class="messages" role="log" aria-live="polite" aria-label="Chat messages"><div class="welcome"><div class="welcome-icon">✳</div><h3>What are we building today?</h3><p>Ask me about coding, debugging, AI, or your next project.</p><div class="prompt-grid"><button class="suggestion-card" data-prompt="Explain machine learning like I'm a beginner." type="button">✦ Explain machine learning <span>↗</span></button><button class="suggestion-card" data-prompt="Why does my Python code give an IndexError?" type="button">⌘ Fix a coding error <span>↗</span></button><button class="suggestion-card" data-prompt="Give me three unique hackathon project ideas." type="button">◇ Hackathon ideas <span>↗</span></button><button class="suggestion-card" data-prompt="Teach me JavaScript async and await with examples." type="button">&lt;/&gt; Learn JavaScript <span>↗</span></button></div></div></div>
+    <div id="attachments" class="attachments" aria-live="polite" aria-label="Selected attachments"></div>
+    <form id="chat-form" class="chat-form"><label for="chat-input" class="sr-only">Type your message</label><button id="attach-button" class="attach-button" type="button" aria-label="Attach image, video or file" title="Attach image, video or file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.44 11.05 12.25 20.24a5.5 5.5 0 0 1-7.78-7.78l8.49-8.49a3.5 3.5 0 1 1 4.95 4.95l-8.49 8.49a1.5 1.5 0 0 1-2.12-2.12l7.78-7.78"/></svg></button><input id="file-input" class="sr-only" type="file" multiple accept=".png,.jpg,.jpeg,.webp,.gif,.mp4,.mov,.webm,.pdf,.docx,.txt,.md,.py,.js,.jsx,.ts,.tsx,.html,.css,.json,.java,.c,.cpp,.cs,.go,.rs,.rb,.php,.xml,.yml,.yaml,.csv,.sql,.sh" /><textarea id="chat-input" rows="1" maxlength="12000" placeholder="Ask anything about code, or attach a screenshot, video or document..."></textarea><button id="send-button" class="send-button" aria-label="Send message" title="Send message" type="submit">➜</button></form><div class="chat-note">Attach images (PNG, JPG, WebP), videos (MP4, MOV, WebM), PDF, DOCX or code files · Enter to send · Shift+Enter for a new line.</div>
+   </div></div>
+  </section>
+  <section class="bottom-cta container" id="about"><span class="section-kicker">IDEAS START HERE</span><h2>Your next breakthrough<br/><span class="gradient-text">is one question away.</span></h2><p>Built to make learning code feel less intimidating and more exciting.</p><a class="btn btn-primary" href="#assistant">Try DevMind AI <span>↗</span></a></section>
+ </main><footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">✳</span><span>DevMind <b>AI</b></span></a><span>Built to learn. Designed to create.</span><span>© <span id="year"></span> DevMind AI</span></footer>
+</body></html>
